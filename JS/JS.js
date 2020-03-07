@@ -8,8 +8,8 @@ console.log(str);
 }
 function count(){
 var arr =[str-1];
-	for (var i = str-1; i>=1; i--){
-	arr [i] = str - i;
+	for (var i = str-2; i>0; i--){
+	arr [i] = str - (i+1);
 	//str = str + arr;
 	console.log(arr);
 	document.getElementById("arr").innerHTML = arr;
