@@ -7,10 +7,13 @@ str = obj.value
 console.log(str);
 }
 function count(){
-var arr =[str-1];
-	for (var i = str-2; i>0; i--){
-	arr [i] = str - (i+1);
-	//str = str + arr;
+var arr =[];
+var r=str 
+	for (var i = 1; i<str; i++){
+	if (r%3 !== 0 || r==3){
+		if(r%2 !== 0 || r==2){
+	arr [i] = r;}}
+	r = r -1;
 	console.log(arr);
 	document.getElementById("arr").innerHTML = arr;
 	//alert(arr);
