@@ -41,10 +41,6 @@ var j1=str
       else{
 	  arr1 [i] = j1;}}
 	j1 = j1 -1;}
-/*for (ji = 0; ji <j; ji++) {
-  if (arr1[ji] !== undefined){
-    ar = ar +','+arr1[ji];}}
-	console.log(ar);*/
     console.log(arr1);
 	document.getElementById("arr1").innerHTML = arr1;
 }
