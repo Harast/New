@@ -1,7 +1,7 @@
 var str = 0;
 var j = 0;
 var j1 = 0;
-var arr1 =[];
+
 
 function isright(obj)
 {
@@ -13,16 +13,28 @@ console.log(j);
 console.log(str);
 }
 function count(){
-var j1 = j;
-var ar='';
-	for (var i = 0; i<j; i++){
-	if (j1>1 && j1%2 !== 0 || j1==2){
-		if(j1%3 !== 0 || j1==3){
-	arr1 [i] = j1;}}
-	j1 = j1 -1;}
-for (ji = 0; ji <j; ji++) {
-  if (arr1[ji] !== undefined){
-    ar = ar +','+arr1[ji];}}
+let r = str;
+var i = 0;
+let ar =[];
+function testPrime(number) {
+    var isPrime = number == 2|| number == 3;
+    var checkNumber = Math.sqrt(number);
+        for (i = 2; i <= checkNumber; i++) {
+        if (number % i == 0 && number != i) {
+                isPrime = false;
+                break
+            } else isPrime = true;
+        }
+ 
+    return isPrime
+}
+
+while (r>=0){
+  if (testPrime(r) == 1){
+//console.log(testPrime(r),r);
+    ar.push(r);}
+    r = r-1;
+}
 	console.log(ar);
 	document.getElementById("ar").innerHTML = ar;
 }
