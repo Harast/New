@@ -1,7 +1,7 @@
 var str = 0;
 var j = 0;
 var j1 = 0;
-
+var asd=0;
 
 function isright(obj)
 {
