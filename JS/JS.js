@@ -65,3 +65,7 @@ function Fizz_Buzz(){
   console.log(arr1);
   document.getElementById("arr1").innerHTML = arr1;
 }
+
+function Palindrom(){
+
+}
