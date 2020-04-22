@@ -68,13 +68,14 @@ function Fizz_Buzz(){
 }
 
 function Palindrom(obj){
-str1 = obj.value;
-pal = '';
+str = obj.value;
+var str1 = (str.replace(/[^a-z]/gim,''));
+Pal = '';
   if(str1 === str1.split('').reverse().join('')){
 	Pal = 'Palindrom';
   }else{
 	  Pal = 'It`s not palindrome';
-	  console.log(Palindrom);
+	  console.log(Pal);
   }
  document.getElementById("Pal").innerHTML = Pal;
 }
