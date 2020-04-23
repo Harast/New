@@ -1,4 +1,5 @@
 ﻿var str = 0;
+var str1 = '';
 
 function isright(obj){
   let j = 0;
@@ -64,4 +65,17 @@ function Fizz_Buzz(){
   
   console.log(arr1);
   document.getElementById("arr1").innerHTML = arr1;
+}
+
+function Palindrom(obj){
+str = obj.value;
+var str1 = (str.replace(/[^a-z]/gim,''));
+Pal = '';
+  if(str1 === str1.split('').reverse().join('')){
+	Pal = 'Palindrom';
+  }else{
+	  Pal = 'It`s not palindrome';
+	  console.log(Pal);
+  }
+ document.getElementById("Pal").innerHTML = Pal;
 }
