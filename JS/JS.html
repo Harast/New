@@ -4,15 +4,35 @@
 <meta charset="utf-8">
   <script src="JS.js"></script>
   <title>Привіт</title>
+  <style>
+   h1 {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */ 
+    font-size: 250%; /* Размер шрифта в процентах */ 
+   } 
+   p {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 8pt; /* Размер шрифта в пунктах */ 
+    padding-top: 10px;
+    border: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+   }
+   </style>
   </head>
 <body>
   <h1>Вітаю всіх!!!<h1>
-  <h2><input type="text" id="test" size=10 class="num_only" value=""
+  <h2><p><tt>Only digets</tt></p>
+    <input type="text" id="test" size=10 class="num_only" value=""
       onkeyup="this.value=this.value.replace(/[^0-9]+/g,'');isright(this);">
-  <div><input type="text" id="Palindrom" size=20 value="" onkeyup="Palindrom(this);"></div>
-  <div id=Pal></div></h2>
+	<div><p><tt>Only words</tt></p><input type="text" id="Palindrom" size=20 value="" onkeyup="Palindrom(this);"></div>
+    <div id=Pal></div>
+    <input name="r1" type="radio" value="5"> Max
+    <input name="r1" type="radio" value="13"> Min
+    <input name="r1" type="radio" value="53"> Average
+    <input name="r1" type="radio" value="3"> Median</h2>
   <h3><button onclick="count()" value="Ось">START</button>
-  <a><button onclick="Fizz_Buzz()">Fizz,Buzz</button></a></h3>
+  <a><button onclick="Fizz_Buzz()">Fizz,Buzz</button></a>
+  <a><button onclick="fun1()">Check digits</button></a></h3>
 	<h4><a href="eloquentjavascript_ru.pdf">Let's learn together</a>
 	<div id=ar></div> <div id=arr1></div></h4>
 </body>
