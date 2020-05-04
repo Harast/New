@@ -81,10 +81,13 @@ Pal = '';
 }
 
 function fun1() {
+	let a = 0
     var rad=document.getElementsByName('r1');
     for (var i=0;i<rad.length; i++) {
         if (rad[i].checked) {
-            alert('Выбран '+i+' radiobutton');
+			a=i;
+            console.log(a);
         }
-    }
+    document.getElementById("a").innerHTML = a;
+	}
 }
